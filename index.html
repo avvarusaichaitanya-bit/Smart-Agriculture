@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Smart Agriculture Monitoring System</h1>
+        <p>Smart Farming | Save Water | Improve Crops</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#monitor">Monitoring</a>
+        <a href="#control">Pump Control</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💧 Soil Moisture</h3>
+                <h2 id="moisture">65%</h2>
+                <p>Soil Condition</p>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Temperature</h3>
+                <h2 id="temperature">28°C</h2>
+                <p>Field Temperature</p>
+            </div>
+
+            <div class="card">
+                <h3>☁️ Humidity</h3>
+                <h2 id="humidity">55%</h2>
+                <p>Air Humidity</p>
+            </div>
+
+            <div class="card">
+                <h3>🚿 Water Pump</h3>
+                <h2 id="pump">OFF</h2>
+                <p>Current Status</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="monitor">
+        <h2>Soil Monitoring</h2>
+
+        <div class="monitor-box">
+            <h3>Soil Moisture Level</h3>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <p id="soil-status">Soil Condition: Good</p>
+
+            <button onclick="updateData()">
+                Refresh Sensor Data
+            </button>
+        </div>
+    </section>
+
+    <section id="control">
+        <h2>Water Pump Control</h2>
+
+        <div class="control-box">
+            <h3>Water Pump: <span id="pump-status">OFF</span></h3>
+
+            <button onclick="turnOn()">Turn ON</button>
+
+            <button onclick="turnOff()">Turn OFF</button>
+
+            <button onclick="autoMode()">Automatic Mode</button>
+
+            <p id="message">Pump is currently OFF</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Project</h2>
+
+        <p>
+            Smart Agriculture Monitoring System helps farmers
+            monitor soil moisture, temperature and humidity.
+            It provides an automatic irrigation simulation
+            to improve water management and farming efficiency.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Agriculture Monitoring System</p>
+        <p>Developed for MEFF Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://media.istockphoto.com/id/1281043786/photo/aerial-top-view-of-agriculture-field.jpg?b=1&s=612x612&w=0&k=20&c=Udb8u8lcttUk7VIgod_hUAvTq2QmBg8Usue740exibk=");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #222;
+}
+
+header {
+    background: #167d3d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #105c2c;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+section {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #167d3d;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card, .monitor-box, .control-box {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0002;
+    backdrop-filter: blur(5px);
+}
+
+.card h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.progress {
+    background: #ddd;
+    height: 25px;
+    border-radius: 20px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 65%;
+    height: 100%;
+    background: #20a354;
+    border-radius: 20px;
+    transition: width 0.4s;
+}
+
+button {
+    background: #167d3d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105c2c;
+}
+
+.monitor-box, .control-box {
+    max-width: 650px;
+    margin: auto;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+footer {
+    background: #105c2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
